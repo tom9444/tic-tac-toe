@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Books</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="game.js" defer></script>
+  </head>
+  <body>
+    <h1>TIC TAC TOE</h1>
+    <div id="info">
+      <div>
+        <label for="playerOne">Player one:</label>
+        <input type="text" name="playerOne" id="playerOne"/>
+        <select name="markSelect" id="markSelect">
+          <option value="O">O</option>
+          <option value="X" selected>X</option>
+        </select>
+      </div>
+      <div>
+        <label for="playerTwo">Player two:</label>
+        <input type="text" name="playerTwo" id="playerTwo" />
+      </div>
+      <button id="startGame">Start / Restart the Game</button>
+    </div>
+    <div class="grid-container">
+      <div class="cell" data-row="0" data-col="0"></div>
+      <div class="cell" data-row="0" data-col="1"></div>
+      <div class="cell" data-row="0" data-col="2"></div>
+      <div class="cell" data-row="1" data-col="0"></div>
+      <div class="cell" data-row="1" data-col="1"></div>
+      <div class="cell" data-row="1" data-col="2"></div>
+      <div class="cell" data-row="2" data-col="0"></div>
+      <div class="cell" data-row="2" data-col="1"></div>
+      <div class="cell" data-row="2" data-col="2"></div>
+    </div>
+    <div id="gameResult"></div>
+    <div id="gameCount">
+      <div id="playerOneWins"></div>
+      <div id="playerTwoWins"></div>
+    </div>
+  </body>
+</html>
